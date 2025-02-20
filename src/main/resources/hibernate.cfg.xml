@@ -6,10 +6,17 @@
   <session-factory>
     <property name="connection.url"/>
     <property name="connection.driver_class"/>
-    <!-- <property name="connection.username"/> -->
-    <!-- <property name="connection.password"/> -->
 
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+
+    <!--DB schema will be updated if needed-->
+    <property name="hibernate.hbm2ddl.auto">create</property>
+
+    <!--create-create schema-->
+    <!--update-update schema(reflect table changes)-->
+    <!--create-drop- create schema and drop schema-->
+    <!--validate-validate schema (if invalid throw exception)-->
+
   </session-factory>
 </hibernate-configuration>
